@@ -1,0 +1,34 @@
+#container{
+  width: 1200px;
+  margin: 20px auto;
+  background-color: beige;
+}
+h1{
+  text-align: center;
+}
+.list{
+  list-style: none;
+  padding:0;
+}
+
+.list li{
+  float: left;
+  padding: 0;
+  margin: 10px;
+}
+
+.list .caption{
+position: absolute;
+top: 300px;
+width: 300px;
+height: 200px;
+padding-top: 20px;
+background-color: rgba(0,0,0,0,6);
+opacity: 0;
+transition: all 0.5x ease-in-out;
+z-index: 10;
+}
+.list li:hover .caption{
+  opacity: 1;
+  transform: translateY(-200px);
+}

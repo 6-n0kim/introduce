@@ -1,0 +1,18 @@
+<script>
+  var emptyObject = {};
+  alert(typeof emptyObject);
+
+  var person = {
+    name:'JY' ,
+    gender: 'male' ,
+    age:'27',
+    sayHello: function (){
+      alert('Hi! My name is ' + this.name);
+    }
+    
+
+  };
+alert(typeof person);
+alert(person.gender);
+person.sayHello();
+</script>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+<style>
+  *{
+    margin: 10px auto;
+  }
+  #container{
+    width: 600px;
+    border: 1px solid #000;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: minmax(100px auto);
+  }
+
+  .items{
+    border: 1px solid purple;
+  }
+  .items:last-child{
+    border-right: 2px solid purple;
+  }
+</style>
+
+  <div id="container">
+    <div class="items">11111Sunt nulla ea tempor Lorem deserunt duis voluptate.</div>
+    <div class="items">22222Incididunt irure cillum non dolore reprehenderit aliquip adipisicing.</div>
+    <div class="items">33333Elit id id irure esse pariatur aute sint commodo Lorem nostrud ea velit ut consequat.</div>
+    <div class="items">44444Esse magna exercitation consequat officia adipisicing aliqua et consectetur minim officia.</div>
+    <div class="items">55555Velit eu aliqua ullamco dolor consequat dolore.</div>
+  </div>
+</body>
+</html>

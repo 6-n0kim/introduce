@@ -1,0 +1,28 @@
+<div id="box">
+  <div id="box_box" ></div>element</div>
+</div>
+
+<ul>
+  <li>1-1</li>
+  <li>1-2</li>
+</ul>
+
+<ul>
+  <li>2-1</li>
+  <li>2-2</li>
+</ul>
+
+<script>
+  //1. element 변수에 id "box" 요소를 얻어 저장
+  let element =document.getElementById("box");
+
+  //2. element 요소의 배경을 red로 변경
+  element.style.background = "red";
+  
+  //3. 
+  let elements = document.querySelectorAll('ul>il:last-child');
+  for(let elem of elements){
+  alert(elem.innerHTML);
+  }
+
+</script>

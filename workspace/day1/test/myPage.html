@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!--
+ 과제)
+ 1. 자기소개페이지 만들기
+     
+     구성조건
+       - <nav>  : 개인 블로그 or 노션 of 티스토리 이동
+       - <article> : 본인 사진과 자신소개 
+       - <aside> : 본인사진이나 좋아하는 사진 6개 등록 썸네일형태로 등록후
+                        클릭하면 사이즈 업하여 보여주기
+                        빅사이즈 그림 본후 클릭하여 사진 종료
+      -<footer>   본인 이메일 링크 걸기 
+
+   
+      기본 글꼴 지정
+
+      @font-face {
+    	  font-family: 'RIDIBatang';
+      	  src: url   ('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');
+  	  font-weight: normal;
+              font-style: normal;  }
+
+
+	header {
+    	display: block;
+    	background: #a5d296;
+    	padding: 50px;
+    	text-align: center;
+   	 color: whitesmoke;
+   	 font-family: 'RIDIBatang';
+	}
+ 
+      
+     * 웹폰트는 자유사용  가능
+  -->
+</head>
+<body>
+  <nav>
+  <a href="https://www.naver.com">blog</a>
+</nav>
+<article>
+  <div><img src="../images/photo.jpg" alt="me"></div>
+  <div>
+    <h2>introduce</h2>
+    <p>-------------------------------------------------</p>
+  </div>
+</article>
+<aside>
+  <div id="pic"></div>
+  <div id="pic"></div>
+  <div id="pic"></div>
+  <div id="pic"></div>
+  <div id="pic"></div>
+  <div id="pic"></div>
+</aside>
+<footer>
+  <a href="#">my email rink</a>
+</footer>
+
+</body>
+</html>

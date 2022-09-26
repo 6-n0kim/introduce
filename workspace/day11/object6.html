@@ -1,0 +1,27 @@
+<script>
+  //caller 프로퍼티 : 자기자신을 호출하는 함수
+
+  function cat(func){
+    var result = func();
+    return result;
+  }
+
+  function dog(){
+    return 'caller: ' + dog.caller;
+  }
+
+  alert(cat(dog));
+  alert(dog);
+
+  //length 프로퍼티 : 함수정의시 작성된 매개변수의 갯수를 의미
+
+  function foo(){}
+    alert(foo.length); //0
+  
+  function foo1(x){}
+    alert(foo1.length); //1
+  
+  function foo2(x,y){}
+    alert(foo2.length); //2
+  
+</script>

@@ -1,0 +1,46 @@
+<div id="content">
+    
+  안녕하세요? 자바스크립트 수업입니다.
+  
+  <span style="display: none">숨겨진 텍스트</span>;
+  </div>
+  <input type="button" value="innerText" onclick="setInnerText()"/>
+  <input type="button" value="innerHtml" onclick="setInnerHtml()"/>
+  <input type="button" value="textContent" onclick="settextContent()"/>
+  
+  
+  <input type="button" value="getinnerText" onclick="getInnerText()"/>
+  <input type="button" value="getinnerHtml" onclick="getInnerHtml()"/>
+  <input type="button" value="gettextContent" onclick="gettextContent()"/>
+  
+  <script>
+  
+  function setInnerText(){
+      const element1=document.getElementById('content');
+      element1.innerText="<div style='color:red'>A<div>";//<div style='color:red'>A<div>
+  }
+  
+  function setInnerHtml(){
+      const element1=document.getElementById('content');
+      element1.innerHTML="<div style='color:red'>A<div>";//A
+  }
+  function settextContent(){
+      const element1=document.getElementById('content');
+      element1.textContent="<div style='color:red'>A<div>";
+  }
+  
+  function getInnerText(){
+      const element1=document.getElementById('content');
+     alert(element1.innerText);
+  }
+  
+  function getInnerHtml(){
+      const element1=document.getElementById('content');
+      alert(element1.innerHTML);
+  }
+  
+  function gettextContent(){
+      const element1=document.getElementById('content');
+      alert(element1.textContent);
+  }
+  </script>

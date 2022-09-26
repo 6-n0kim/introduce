@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>selector2</title>
+  <style>
+    #header>h1 {
+      color: aqua;
+    }
+
+    #section>h1 {
+      color: orangered;
+    }
+
+    .title {
+      background-color: yellow;
+    }
+  </style>
+</head>
+
+<body>
+  <!--후손선택자와 자손선택자-->
+  <div id="header">
+    <h1 class="title">추석맞이</h1>
+  </div>
+  <div id="nav">
+    <h1>navigator</h1>
+  </div>
+  <div id="section">
+    <h1 class="">즐겁고 행복한 명절되세요!</h1>
+    <p>코로나 조심! 걸렸어도 또 걸린다네요!</p>
+  </div>
+</body>
+
+</html>
+클래스선택자 title의 background를 yellow로 바꿔보자

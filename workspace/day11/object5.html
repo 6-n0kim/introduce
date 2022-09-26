@@ -1,0 +1,20 @@
+<script>
+  function sum(){
+    if(!arguments.length) return 0;
+
+    var array = Array.prototype.slice.call(arguments);
+    return array.reduce(function(pre,cur){
+      return pre+cur;
+    });
+  }
+
+/*
+ES6 버전 (arrow function)
+  function sum(...args){
+    if(!args.length) return 0;
+    return args.reduce((pre, cur) => pre +cur)
+  }
+*/
+
+  alert(sum(1,2,3,4,5)); //15
+</script>

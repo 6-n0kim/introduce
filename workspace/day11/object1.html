@@ -1,0 +1,45 @@
+<script>
+  /*
+  var str = 'Hello';
+  str = 'world';
+  alert(str); //world
+
+  var arr = [];
+  alert(arr.length); //0
+  var v2 = arr.push(2); 
+  alert(arr.length); //1
+  alert(v2);    //1
+  */
+
+//1. 무명의 리터럴로 표현이 가능
+//2. 변수나 자료구조 등에 저장할 수 있어야 한다.
+
+var increase = function(num){
+  return ++num;
+};
+
+var decrease = function(num){
+  return --num;
+};
+var predicates = {increase , decrease};
+
+function makeCounter(predicate){
+  var num = 0;
+  return function(){
+    num = predicate(num);
+    return num;
+  };
+}
+
+alert(makeCounter());
+
+
+var increaser = makeCounter(predicates.increase);
+alert(increaser());
+alert(increaser());
+
+var decreaser = makeCounter(predicates.decrease);
+alert(decreaser());
+alert(decreaser());
+
+</script>

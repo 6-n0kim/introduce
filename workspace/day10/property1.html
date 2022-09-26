@@ -1,0 +1,24 @@
+<script>
+  //property 접근방법 read
+  var person = {
+    'first_name': 'Kim',
+    'last-name': 'jun',
+    gender: 'male',
+    1: 10
+  };
+  alert(person.first_name);
+  alert(person['first_name']);
+
+  alert(person['1']);
+  alert(person[1]);
+  alert(person.age);
+  //property 접근 방법 : 값을 수정(갱신)
+  person['first_name'] = 'kim';
+  alert(person.first_name);
+
+  person.age = 20; //프로퍼티의 동적생성
+  alert(person.age);
+//프로퍼티 삭제
+delete person.gender;
+  alert(person.gender);
+</script>

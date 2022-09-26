@@ -1,0 +1,18 @@
+<script>
+  //가변인자 함수
+  function sum(){
+    var result = 0;
+    for(var i = 0 ; i<arguments.length; i++){
+      result +=arguments[i];
+    }
+    return result;
+  }
+  //JS는 함수 호출시 인수들과 함께 암묵적으로 arguments
+  //함수 내부로 전달된다.
+  //arguments 객체는 배열형태로 인자값 정보를 담고있지만
+  //array-like-object
+
+ alert(sum()); //0
+ alert(sum(1,2)); //3
+ alert(sum(1,2,3)); //6
+</script>

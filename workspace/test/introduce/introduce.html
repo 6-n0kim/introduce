@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자기 소개 페이지</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="introduce.css">
+
+</head>
+
+<body>
+    <header>
+        <!--포폴에 넣는지 몰라서 대충 했는데 수정하겠습니다.-->
+        <h1>김준영 자기소개 페이지</h1>
+    </header>
+    <div class="main">
+        <nav id="my blog"> </nav>
+        <div class="main">
+            <article>
+                <div id="border_bottom">
+                    <div>
+                        <h2>About me</h2>
+
+                    </div>
+                    <div><img src="images/profileImg.jpg" alt="myPic" id="profileImg">
+                        <p>이름 : 김준영<br>생년월일: 1996-12-11<br>성별 : 남 <br>취미 : 산책 , 음악감상
+                        </p>
+                        <p>Git : <a href="#" id="link">www.githube</a> <br>blog : <a href="#"
+                                id="link">www.naver.com/</a></p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Introduce</h3>
+                    <h5>과거</h5>
+                    <p>대진대학교 생명화학과 생명전공 졸업
+                        <br>울산대학교 의과대학원 의과학전공 기도폐 실험실 연구원
+                        <h5>현재</h5>
+                        한국ICT인재개발원에서 수강 중</p>
+                </div>
+            </article>
+            <aside>
+                <div class="picture">
+                    <ul>
+                        <li><img src="images/pic-1-t.jpg" data-src="images/pic-1.jpg" class="pic"></li>
+                        <li><img src="images/pic-2-t.jpg" data-src="images/pic-2.jpg" class="pic"></li>
+                        <li><img src="images/pic-3-t.jpg" data-src="images/pic-3.jpg" class="pic"></li>
+                        <li><img src="images/pic-4-t.jpg" data-src="images/pic-4.jpg" class="pic"></li>
+                        <li><img src="images/pic-5-t.jpg" data-src="images/pic-5.jpg" class="pic"></li>
+                        <li><img src="images/pic-6-t.jpg" data-src="images/pic-6.jpg" class="pic"></li>
+                    </ul>
+                </div>
+
+                <div id="lightbox">
+                    <img src="images/pic-1.jpg" alt="" id="lightboxImage">
+                </div>
+            </aside>
+
+        </div>
+    </div>
+    <div class="text-center p-3" style="background-color: black">
+        <a class="text-white" href="mailto: 1090jun@naver.com">이메일 보내기</a>
+        <!--mailto 잘 모르겠습니다... 작동이 안되네요-->
+    </div>
+    <!--<script src="introduce.js"></script>-->
+    <script>
+        var pics = document.getElementsByClassName(
+            "pic");
+        var lightbox = document.getElementById("lightbox");
+        var lightboxImage = document.getElementById(
+            "lightboxImage");
+
+        for (i = 0; i < pics.length; i++) {
+            pics[i].addEventListener("click", showLightbox);
+        }
+
+        function showLightbox() {
+            bigLocation = this.getAttribute("data-src");
+            lightboxImage.setAttribute("src", bigLocation);
+            lightbox.style.display = "block";
+        }
+        lightbox.onclick = function () {
+            lightbox.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

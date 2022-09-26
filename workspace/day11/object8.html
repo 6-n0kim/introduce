@@ -1,0 +1,26 @@
+<script>
+  function hello(){
+    alert('Hello');
+    document.write('Hello world JS!');
+  }
+  hello();
+
+  function addNumber(n1,n2){
+    let sum = n1+n2;
+    return sum;
+  }
+  let result =addNumber(10,20);
+  document.write('<h1 align = "center">');
+  document.write("두 수를 더한 값 : " + result);
+  document.write('</h1>');
+
+  (function(){
+    let userName = prompt("이름을 입력하세요.");
+    document.write("안녕하세요?" + userName + "님 환영합니다.")
+  }());
+
+  (function(n1,n2){
+    sum = n1 +n2;
+  }(10,20));
+  document.write("실행결과 : " + sum);
+</script>

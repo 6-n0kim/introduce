@@ -1,0 +1,23 @@
+<script>
+  //객체형(참조형)인수는 Call - by - reference 동작
+
+function chageVal(primitive, obj){
+  primitive += 100;
+  obj.name = 'Kim';
+  obj.gender = 'male';
+  }
+
+var num = 100;
+var obj = {
+  name: 'Lee',
+  gender : 'female'
+
+};
+alert(num);
+alert(obj.name);
+
+num = 200;
+chageVal(num,obj);
+alert(num);
+alert(obj.name + " " + obj.gender);
+</script>

@@ -1,0 +1,21 @@
+<script>
+  function person(name, gender){
+    var married = true;  //private
+    this.name = name;
+    this.gender = gender;
+    this.sayHello = function(){
+      alert('Hi my name is ' + this.name);
+    }
+  }
+
+  //인스턴스 생성
+  var person1 = new person('kim' , 'male');
+  var person2 = new person('park','female');
+
+
+  alert(person1.name);
+  alert(person2.name);
+  alert(person1.married);
+  person1.sayHello();
+  person2.sayHello();
+  </script>

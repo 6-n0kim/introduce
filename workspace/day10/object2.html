@@ -1,0 +1,9 @@
+<script>
+  var person = new Object();  //new 연산자와 Object 생성자 함수 호출하여 빈객체 생성
+  person.name = 'JY';
+  person.gender = 'male';
+  person.sayHello =function(){
+    alert('Hi my name is ' + this.name)
+  }
+  person.sayHello();
+</script>

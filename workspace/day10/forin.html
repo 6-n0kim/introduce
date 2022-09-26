@@ -1,0 +1,39 @@
+<script>
+  //for-in문을 사용하면 객체에 포함된 모든 프로퍼티에 대해 루프를 수행
+  var person = {
+    'first_name': 'Kim',
+    'last-name': 'Jun',
+    gender: 'male'
+  };
+  //prop에 person 객체의 프로퍼티 이름이 반환된다.
+  for (var prop in person) {
+    alert(prop + ' : ' + person[prop]);
+  }
+  /* 출력 값
+  first_name : Kim
+  last-name : Jun
+  gender : male  
+  */
+
+  var array = ['one', 'two'];
+  //배열은 인덱스가 반환된다.
+  for (var index in array) {
+    alert(index + ' : ' + array[index])
+  }
+
+  array.name = "my array";
+  for(var index in array){
+    alert(index + ' : ' + array[index]);
+  }
+//for -- of문이 추가 : ES6 추가 된 구문
+
+const array1 = [1,2,3];
+array1.name = "my array";
+for(const value of array1){
+  alert(value);
+}
+
+for(const[index, value] of array1.entries()){
+  alert(index + " : " + value );
+}
+</script>

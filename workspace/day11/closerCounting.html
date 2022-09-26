@@ -1,0 +1,20 @@
+<body>
+  <p>클로저를 사용한 Counting</p>
+  <button id="increase"> + </button>
+  <p id="count"> 0 </p>
+<script>
+  var increaseBtn = document.getElementById("increase");
+  var count = document.getElementById('count');
+  
+  var increase = (function (){
+    var counter= 0;
+    return function(){
+      return ++counter;
+    };
+  }());
+
+  increaseBtn.onclick = function(){
+    count.innerHTML = increase();
+  }
+</script>
+</body>

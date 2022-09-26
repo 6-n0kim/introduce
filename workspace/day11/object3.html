@@ -1,0 +1,18 @@
+<script>
+  function calArea(w,h){
+    var area = w * h;
+    return area;
+  }//단일값 반환
+
+  alert(calArea(10,5));
+
+  function getSize(w,h,d){
+    var area = w*h;
+    var volume = w*h*d;
+    return [area, volume];  //복수값 배열반환
+  }
+
+  alert('area is' + getSize(2,3,2)[0]); //결과값:6
+  alert('volume is' + getSize(3,2,3)[1]); //결과값 : 18   
+  
+  </script>
