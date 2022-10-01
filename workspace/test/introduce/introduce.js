@@ -12,6 +12,7 @@ function showLightbox() {
   bigLocation = this.getAttribute("data-src");
   lightboxImage.setAttribute("src", bigLocation);
   lightbox.style.display = "block";
+  body.style. opacity = "0.5";
 }
 lightbox.onclick = function () {
   lightbox.style.display = "none";

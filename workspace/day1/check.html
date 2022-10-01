@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Document</title>
-<style>
-  #bear{
-    display :flex;
-  }
-  #cat{
-    display: block;
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 <body>
-  <div class = "test">
-<img src="images/bear.jpg" id="bear">
-<img src="images/cat.jpg" id="cat">
-    </body>
-
+  <h1>회원가입 페이지</h1>
+  <form action="#">
+    <p>회원 이름  <input type="text" name="mname"></p>
+    <p>아이디  <input type="text" name="memid"></p>
+    <p>비밀번호 <input type="password" name="pwd">  </p>
+    <p>주소  <input type="text" name="address"></p>
+    <p>가입인사말  <textarea name="hi" id="" cols="30" rows="3"></textarea></p>
+    <p>가입이유
+      다이어트<input type="checkbox" name="hobby" value:"다이어트" checked>
+				체력증진<input type="checkbox" name="hobby" value:"체력증진"> 
+				대회출전<input type="checkbox" name="hobby" value:"대회출전">
+        바디프로필<input type="checkbox" name="hobby" value:"바디프로필">
+      </p>
+  </form>
+</body>
 </html>
